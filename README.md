@@ -109,8 +109,9 @@ npm start
 - More job sources can be added for broader coverage
 
 ## Made by
-Kelothu Shivaprasad
-Aspiring Software Developer
+-Kelothu Shivaprasad
+-Aspiring Software Developer
+
 
 ⚠️ Disclaimer
 This project is intended for educational and personal use only.
