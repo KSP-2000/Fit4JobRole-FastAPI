@@ -15,7 +15,7 @@ app = FastAPI()
 # Allow React frontend to access backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change "*" to your React app URL in production
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -68,27 +68,3 @@ async def upload_file(
     return updated_jobs_list
 
 
-
-
-
-
-
-    # # Mock: returning multiple dictionaries
-    # response_data = [
-    #     {
-    #         "role": role,
-    #         "location": location,
-    #         "filename": file.filename,
-    #         "size": len(resume_skills),
-    #         "resume_skills": resume_skills
-    #     },
-    #     {
-    #         "name": f"{role} - copy",
-    #         "description": f"{location} (duplicate)",
-    #         "filename": f"copy_{file.filename}",
-    #         "size": len(resume_skills) // 2,
-    #         "resume_skills": resume_skills
-    #     }
-    # ]
-
-    # return response_data
